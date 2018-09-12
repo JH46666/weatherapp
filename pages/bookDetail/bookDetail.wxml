@@ -1,0 +1,11 @@
+<van-row gutter="20">
+  <van-col span="24" offset="12">
+      <text>{{book.title}}</text>
+      <text>{{book.images}}</text>      
+      <text>{{book.author_intro}}</text>
+      <text>{{book.author_intro}}</text>
+      <text>{{book.author_intro}}</text>
+      <text>{{book.author_intro}}</text>
+      <text>{{book.author_intro}}</text>      
+  </van-col>
+</van-row>

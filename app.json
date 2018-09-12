@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/bookDetail/bookDetail",
+    "pages/scanCode/scanCode",
+    "pages/movie/movie"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的主页"
+      },
+      {
+        "pagePath": "pages/scanCode/scanCode",
+        "text": "我的图书"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "我的电影"
+      }   
+    ]
+  }
+    
+}

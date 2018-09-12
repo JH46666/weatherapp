@@ -1,0 +1,29 @@
+<!--pages/scanCode/scanCode.wxml-->
+<view >
+    <van-row>
+      <van-col span="8" offset="8">
+        <van-button type="primary" bind:click="scanCode">扫码加书             </van-button>
+      </van-col>
+      <van-col span="8"></van-col>
+    </van-row>
+</view>
+  <van-card
+    wx:for="{{bookList}}"
+    wx:for-item="book"
+    wx:key="book"
+    title="{{book.title}}"
+    desc="{{book.author[0]}}"  
+    price="{{book.price}}" 
+    thumb="{{book.image}}"
+  >
+  <view slot="tags">
+    <van-tag type="primary">{{book.tags[0].name}}</van-tag>
+    <van-tag type="primary">{{book.tags[1].name}}</van-tag>  
+  </view>
+  <view slot="footer">
+    <van-button bind:click="onView" type='primary' size="mini">查看</van-button>
+  </view>
+</van-card>
+
+
+

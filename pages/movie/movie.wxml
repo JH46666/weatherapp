@@ -1,0 +1,23 @@
+<!-- <view wx:for="{{subjects}}">
+  
+  <text>标题: {{item.title}}</text>
+  <text>标签: {{item.genres}}</text>
+  <text>图片: {{item.images[large]}}</text>
+  <text>: {{item.genres}}</text>
+  
+</view> -->
+
+<scroll-view class="container" 
+      scroll-x bindscrolltoupper="upper" bindscrolltolower="lower" 
+      bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}"
+> 
+    <!-- <view class="content" wx:for="{{subjects}}" wx:for-index="idx" wx:key="item">
+        <view wx:if="{{idx <3}}">
+          <text >{{idx}}:图片: {{item.images[small]}}</text>
+          <text class="">
+            {{item.title}}
+          </text>
+        </view>
+    </view> -->
+</scroll-view>
+
